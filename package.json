@@ -1,0 +1,22 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "sample api documentation project",
+  "devDependencies": {
+    "aglio": "^2.3.0",
+    "drakov": "^1.0.4",
+    "dredd": "^4.1.1"
+  },
+  "config": {
+    "target": "./examples/example1.md"
+  },
+  "scripts": {
+    "aglio:watch": "./node_modules/aglio/bin/aglio.js --theme-full-width -i $npm_package_config_target -s -p 3001",
+    "aglio:compile": "./node_modules/aglio/bin/aglio.js --theme-full-width -i $npm_package_config_target --compile -o ./example.md",
+    "aglio:merge": "./node_modules/aglio/bin/aglio.js --theme-full-width -i ./examples/example3/base.md --compile -o ./example.md",
+    "test": "./node_modules/dredd/bin/dredd",
+    "mock": "./node_modules/drakov/drakov -f example.md -p 3000 --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}
