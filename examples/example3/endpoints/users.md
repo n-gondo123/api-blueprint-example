@@ -16,7 +16,7 @@
 + Request (application/json)
     + Attributes
         + firstName: Naoki (string, required) - 名
-        + lastName: Gondo (string, required) - 性
+        + lastName: Gondo (string, required) - 姓
         + gender (Gender, required) - 性別
         + birthday (object, optional) - 生年月日
             + year: 1988 (number, required) - 西暦年
@@ -35,7 +35,7 @@
 + Request (application/json)
     + Attributes
         + firstName: Naoki (string, required) - 名
-        + lastName: Gondo (string, required) - 性
+        + lastName: Gondo (string, required) - 姓
 
 + Response 200 (application/json)
     + Attributes (User)
